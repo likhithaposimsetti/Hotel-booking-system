@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Website</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- custom css link -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- header -->
+
+   <header class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i> HOTEL TAJ </a>
+
+      <nav class="navbar">
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#room">room</a>
+         <a href="#gallery">gallery</a>
+         <a href="#service">service</a>
+         <a href="#review">reviews</a>
+         <a href="#FAQ">FAQ'S</a>
+         <a href="#reservation" class="btn"> BOOK NOW</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </header>
+
+   <!-- end -->
+
+   <!-- home -->
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide1.jpg) no-repeat;">
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide2.jpg) no-repeat;">
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide3.jpg) no-repeat;">
+            </div>
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- availability -->
+
+   <section class="availability">
+
+      <form action="">
+
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" id="" class="input">
+               <option value="1">1 adults</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>children <span>*</span></p>
+            <select name="child" id="" class="input">
+               <option value="1">1 child</option>
+               <option value="2">2 child</option>
+               <option value="3">3 child</option>
+               <option value="4">4 child</option>
+               <option value="5">5 child</option>
+               <option value="6">6 child</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" id="" class="input">
+               <option value="1">1 rooms</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+
+         <input type="submit" value="check availability" name="check" class="btn" id="demo" onclick="ck()">
+         status:Available
+
+      </form>
+
+   </section>
+
+   <!-- end -->
+
+
+   <!-- about -->
+
+   <section class="about" id="about">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/about.jpg" alt="">
+         </div>
+
+         <div class="content">
+            <h3>about us</h3>
+            <p>Taj Hotels is a chain of luxury hotels and a subsidiary of the Indian Hotels Company Limited headquartered in Mumbai, India. Incorporated by Jamsetji Tata in 1902,the company is a part of the Tata Group. The company employed over 20,000 people in the year 2010. The company has been ranked as the World’s "Strongest Hotel" Brand in 2022and India’s Strongest Brand as per Brand Finance Hotels 50 Report 2022.</p>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- room -->
+
+   <section class="room" id="room">
+
+      <h1 class="heading">our rooms</h1>
+
+      <div class="swiper room-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/room-1.jpg" alt="">
+               </div>
+               <div class="content">
+                  <h3>exclusive room</h3>
+                  <p>lovely environment.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/room-3.jpg" alt="">
+               </div>
+               <div class="content">
+                  <h3>exclusive room</h3>
+                  <p>Available service under any conditions.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/room-6.jpg" alt="">
+               </div>
+               <div class="content">
+                  <h3>exclusive room</h3>
+                  <p>holiday special.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/room-2.jpg" alt="">
+               </div>
+               <div class="content">
+                  <h3>exclusive room</h3>
+                  <p>perfect window view.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+   <section class="gallery" id="gallery">
+      <h1 class="heading">Hotel Gallery</h1>
+
+      <div class="swiper gallery-slider">
+         <div class="swiper-wrapper">
+            <img src="images/gallery1.jpg" class="swiper-slide" alt="">
+            <img src="images/gallery2.jpg" class="swiper-slide" alt="">
+            <img src="images/gallery3.jpg" class="swiper-slide" alt="">
+            <img src="images/gallery4.jpg" class="swiper-slide" alt="">
+            <img src="images/gallery5.jpg" class="swiper-slide" alt="">
+            <img src="images/gallery6.jpg" class="swiper-slide" alt="">
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+
+   <section class="services">
+         <h1 class="heading">our service</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/service1.png" alt="">
+            <h3>swimming pool</h3>
+            <a href="#availability" class="btn">check availability</a>
+         </div>
+
+         <div class="box">
+            <img src="images/service2.png" alt="">
+            <h3>food & drink</h3>
+            <a href="#available" class="btn">Available</a>
+         </div>
+
+         <div class="box">
+            <img src="images/service3.png" alt="">
+            <h3>restaurant</h3>
+            <a href="#reservation" class="btn">make reservation</a>
+         </div>
+
+         <div class="box">
+            <img src="images/service4.png" alt="">
+            <h3>fitness</h3>
+            <a href="#acontact" class="btn">contact us</a>
+         </div>
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- review -->
+
+   <section class="reviews" id="reviews">
+      <h1 class="heading">reviews</h1>
+
+      <div class="swiper reviews-slider">
+   
+         <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+               <img src="images/pic-1.png" alt="">
+               <h3>pavan</h3>
+               <p>great location loved glamping experience friendly staff lovely well maintained.</p>
+            </div>
+            <div class="swiper-slide box">
+               <img src="images/pic-2.png" alt="">
+               <h3>pavani</h3>
+               <p>satisfied.</p>
+            </div>
+            <div class="swiper-slide box">
+               <img src="images/pic-3.png" alt="">
+               <h3>john deo</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+            </div>
+            <div class="swiper-slide box">
+               <img src="images/pic-4.png" alt="">
+               <h3>john deo</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+            </div>
+            <div class="swiper-slide box">
+               <img src="images/pic-5.png" alt="">
+               <h3>john deo</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+            </div>
+            <div class="swiper-slide box">
+               <img src="images/pic-6.png" alt="">
+               <h3>john deo</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo.</p>
+            </div>
+         </div>
+   
+         <div class="swiper-pagination"></div>
+      </div>
+   
+   </section>
+
+   <!-- end -->
+
+   <!-- faq -->
+   <section class="faqs" id="faq">
+      <h1 class="heading">frequently asked questions</h1>
+      <div class="row">
+         <div class="image">
+            <img src="images/faqs.png" alt="">
+         </div>
+         <div class="content">
+            <div class="box active">
+               <h3>what are payment methods?</h3>
+               <p>Online and Ofline is accepted.</p>
+            </div>
+            <div class="box">
+               <h3>Is there any vacancy?</h3>
+               <p>call reception.</p>
+            </div>
+            <div class="box">
+               <h3>how to cancel reservation?</h3>
+               <p>using the web page</p>
+            </div>
+            <div class="box">
+               <h3>how to claim coupons?</h3>
+               <p>By entering the code</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end -->
+   <!-- reservation -->
+   <section class="reservation" id="reservation">
+      <h1 class="heading">book now</h1>
+      <form action="">
+         <div class="container">
+            <div class="box">
+               <p>name <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Name">
+            </div>
+            <div class="box">
+               <p>email <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Email">
+            </div>
+            <div class="box">
+               <p>check in <span>*</span></p>
+               <input type="date" class="input">
+            </div>
+            <div class="box">
+               <p>check out <span>*</span></p>
+               <input type="date" class="input">
+            </div>
+            <div class="box">
+               <p>adults <span>*</span></p>
+               <select name="adults" class="input">
+                  <option value="1">1 adults</option>
+                  <option value="2">2 adults</option>
+                  <option value="3">3 adults</option>
+                  <option value="4">4 adults</option>
+                  <option value="5">5 adults</option>
+                  <option value="6">6 adults</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>children <span>*</span></p>
+               <select name="child" class="input">
+                  <option value="1">1 child</option>
+                  <option value="2">2 child</option>
+                  <option value="3">3 child</option>
+                  <option value="4">4 child</option>
+                  <option value="5">5 child</option>
+                  <option value="6">6 child</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>rooms <span>*</span></p>
+               <select name="rooms" class="input">
+                  <option value="1">1 rooms</option>
+                  <option value="2">2 rooms</option>
+                  <option value="3">3 rooms</option>
+                  <option value="4">4 rooms</option>
+                  <option value="5">5 rooms</option>
+                  <option value="6">6 rooms</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>room type <span>*</span></p>
+               <select name="type" class="input">
+                  <option value="1">exclusive rooms</option>
+                  <option value="2">family rooms</option>
+                  <option value="3">daily rooms</option>
+                  <option value="4">panoramic rooms</option>
+               </select>
+            </div>
+         </div>
+         <input type="submit" value="check availability" class="btn">
+      </form>
+   </section>
+   <!-- end -->
+   <!-- footer -->
+   <section class="footer">
+      <div class="box-container">
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +123-852-4565 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +123-852-4565</a>
+            <a href="#"> <i class="fas fa-envelope"></i> tajhotal@gmail.com</a>
+            <a href="#"> <i class="fas fa-map"></i> Hyderabad,India</a>
+         </div>
+         <div class="box">
+            <h3></h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> rooms</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> reservation</a>
+         </div>
+         <div class="box">
+            <h3>POLICIES</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> re-funding</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> booking issues</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> complaint</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> help</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> rate us</a>
+         </div>
+      </div>
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-instagram"></a>
+         <a href="#" class="fab fa-twitter"></a>
+         <a href="#" class="fab fa-pinterest"></a>
+      </div>
+   </section>
+   <!-- end -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
